@@ -95,6 +95,7 @@
     "verify:build": "node scripts/verify_build.js",
     "verify:dev:api": "node scripts/verify_dev_api.js",
     "verify:worker": "node scripts/verify_worker.js",
+    "verify:all": "npm run verify:build && npm run verify:dev:api && npm run verify:worker",
     "verify:canon": "node server/scripts/verify_canon_counts.js",
     "verify:debug": "node server/scripts/verify/verify_debug_endpoints.js",
     "verify:agendate:eventos": "node server/scripts/verify/verify_agendate_eventos_flow.js",
@@ -124,6 +125,7 @@
     "pipeline:full:tor": "cross-env PROXY_URL=socks5://127.0.0.1:9150 node server/scripts/pipeline_full.js",
     "worker": "node server/worker/index.js",
     "jobs:seed": "node scripts/jobsSeed.js",
+    "bootstrap:local": "node scripts/bootstrap_local.js",
     "seed:manifestacion-geocode-test": "node scripts/seed_manifestacion_geocode_test.js"
   },
   "dependencies": {

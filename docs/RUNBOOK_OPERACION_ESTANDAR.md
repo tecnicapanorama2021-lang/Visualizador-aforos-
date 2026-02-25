@@ -23,6 +23,30 @@ Si no aparece `package.json`, hacer `cd` a la ruta del repo antes de ejecutar np
 
 ---
 
+## Flujo oficial (C)
+
+El flujo canónico para desarrollo y producción es:
+
+- **Dev:** `npm run dev` (API 3001 + web 5173) y en otra terminal `npm run worker` (con Redis en marcha).
+- **Prod:** `npm run build && npm run start`; worker aparte con `npm run worker`.
+- **Verificación rápida (sin escribir):** `npm run verify:all` (build + API + worker en modo smoke).
+- **Bootstrap local (escribe BD/Redis/archivos):** `npm run bootstrap:local` solo cuando quieras preparar BD + jobs en un entorno local; ver abajo.
+
+---
+
+## verify vs bootstrap: cuál usar y cuándo
+
+| Comando | Escribe algo | Cuándo usarlo |
+|--------|---------------|----------------|
+| **verify:build** | No | Comprobar que el build no está roto (CI, antes de merge). |
+| **verify:dev:api** / **verify:worker** | No | Comprobar que la API y el worker arrancan (smoke). |
+| **verify:all** | No | Cadena de los tres: build + API + worker. Red de seguridad antes de releases. |
+| **bootstrap:local** | Sí (BD, Redis, posiblemente archivos) | Primera vez en un clone, o tras borrar BD/Redis. Ejecuta migraciones y jobs:seed; no corre ingests grandes por defecto. |
+
+No uses `bootstrap:local` en CI ni en servidores compartidos sin leer el banner de advertencia.
+
+---
+
 ## Comandos
 
 ### Windows (PowerShell)
