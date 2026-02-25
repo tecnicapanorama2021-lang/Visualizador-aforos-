@@ -32,6 +32,18 @@ El flujo canónico para desarrollo y producción es:
 - **Verificación rápida (sin escribir):** `npm run verify:all` (build + API + worker en modo smoke).
 - **Bootstrap local (escribe BD/Redis/archivos):** `npm run bootstrap:local` solo cuando quieras preparar BD + jobs en un entorno local; ver abajo.
 
+### Comandos oficiales (resumen)
+
+Solo estos comandos forman el set oficial para desarrollo y producción; el resto son utilitarios o legacy (ver `docs/SCRIPTS_CATALOG.md`).
+
+| Uso | Comando |
+|-----|---------|
+| Desarrollo | `npm run dev` |
+| Worker (otra terminal) | `npm run worker` |
+| Verificación (sin escritura) | `npm run verify:all` |
+| Bootstrap local (BD + Redis) | `npm run bootstrap:local` (pide YES; `npm run bootstrap:local -- --yes` para saltar prompt) |
+| Producción | `npm run build` y luego `npm run start` |
+
 ---
 
 ## verify vs bootstrap: cuál usar y cuándo
@@ -41,7 +53,7 @@ El flujo canónico para desarrollo y producción es:
 | **verify:build** | No | Comprobar que el build no está roto (CI, antes de merge). |
 | **verify:dev:api** / **verify:worker** | No | Comprobar que la API y el worker arrancan (smoke). |
 | **verify:all** | No | Cadena de los tres: build + API + worker. Red de seguridad antes de releases. |
-| **bootstrap:local** | Sí (BD, Redis, posiblemente archivos) | Primera vez en un clone, o tras borrar BD/Redis. Ejecuta migraciones y jobs:seed; no corre ingests grandes por defecto. |
+| **bootstrap:local** | Sí (BD, Redis, posiblemente archivos) | Primera vez en un clone, o tras borrar BD/Redis. Ejecuta migraciones y jobs:seed; no corre ingests grandes por defecto. Pide escribir **YES** para continuar; con `-- --yes` se salta el prompt (solo para automatizar en local). |
 
 No uses `bootstrap:local` en CI ni en servidores compartidos sin leer el banner de advertencia.
 
