@@ -117,10 +117,11 @@ Se ha implementado exitosamente la integración completa de capas de movilidad d
   "@turf/turf": "^7.0.0",
   "axios": "^1.6.0",
   "recharts": "^2.10.0",
-  "leaflet-fullscreen": "^1.0.2",
-  "express-rate-limit": "^7.1.0"
+  "leaflet-fullscreen": "^1.0.2"
 }
 ```
+
+(Nota: `express-rate-limit` y otras deps de esta lista fueron eliminadas en limpieza de deps; ver `docs/audit/depcheck-2026-02-25.md`.)
 
 ---
 
