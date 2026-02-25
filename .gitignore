@@ -21,8 +21,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Python
+__pycache__/
+*.pyc
+
 # ETL temporal (CGT raw + estándar)
 server/scripts/tmp
+
+# Cursor (keep shared rules only)
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+!.cursor/README.md
+.cursor/.tmp/
 
 # Editor / OS
 .vscode/*
