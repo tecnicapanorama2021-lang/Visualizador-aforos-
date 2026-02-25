@@ -385,6 +385,7 @@ app.get('/health', async (req, res) => {
     }
   }
   res.json({
+    ok: true,
     status: 'ok',
     timestamp: new Date(),
     db,
