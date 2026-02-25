@@ -1,35 +1,15 @@
-# Documentación — Panorama Ingeniería 2026
+# Documentación — Visualizador de aforos
 
-Índice de la documentación del proyecto. **Raíz:** solo [README.md](../README.md) como manual de entrada.
-
----
-
-## Canónicas (manual operativo y arquitectura)
-
-| Doc | Uso |
-|-----|-----|
-| [DESARROLLO_LOCAL.md](DESARROLLO_LOCAL.md) | Dev/ops: puertos, arranque, migraciones, ingestas, verificación |
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Arquitectura tipo Waze, fuente única incidentes, capas |
-| [RUNBOOK_INGEST.md](RUNBOOK_INGEST.md) | Ingestas canónicas (calendario y contexto_eventos → incidentes) y verificación |
-| [LEGACY.md](LEGACY.md) | Listado de scripts, rutas y componentes legacy/deprecados |
-| [LIMPIEZA_REPO_RESUMEN.md](LIMPIEZA_REPO_RESUMEN.md) | Resumen de organización del repo (movimientos, comandos oficiales) |
+**Qué leer primero:** para operar el proyecto (levantar API, worker, verificar), usa en este orden: [RUNBOOK.md](RUNBOOK.md) y [SCRIPTS.md](SCRIPTS.md). Para auditoría de dependencias y convenciones de batches: [AUDIT.md](AUDIT.md).
 
 ---
 
-## Referencia (histórico / no operativo diario)
+## Docs canónicos (fuente de verdad)
 
-Todo lo que estaba en la raíz como .md de referencia está en **[referencia/](referencia/)**:
+| Doc | Para qué sirve |
+|-----|----------------|
+| **[RUNBOOK.md](RUNBOOK.md)** | Único runbook operativo: cómo levantar dev/prod, golden path, verify vs bootstrap, Redis, comandos oficiales. |
+| **[SCRIPTS.md](SCRIPTS.md)** | Catálogo de scripts npm: orden, prerequisitos (Redis/PG), tabla oficial vs legacy, convenciones. |
+| **[AUDIT.md](AUDIT.md)** | Índice a docs/audit/ (depcheck y otros) y reglas para batches de deps y falsos positivos. |
 
-- Índice: [referencia/README.md](referencia/README.md)
-- Incluye: AUDITORIA_LAYERS_IDECA, COLORS, DEPLOY, MAPEO_CAMPOS_IDECA_REACT, README-BLOG, README-ROUTING, README_DOWNLOAD_SENSORS, CASO_DE_EXITO_PMT_MOVILIDAD, etc.
-
-Otras doc temática (TAREA2, TAREA3, API_GRAFO, ESTRUCTURA_*, INSTRUCCIONES-INTEGRACION-BD, etc.) sigue en **docs/** al mismo nivel que este README.
-
----
-
-## Regla del repo
-
-- **No se agregan .md a la raíz** (excepto README.md).
-- **No se agregan .py a la raíz**; herramientas Python van en **scripts/python/**.
-
-Verificación: `npm run check:root` (ejecuta `scripts/check-root-clean.js`).
+Detalle de scripts por prefijo: [RUNBOOK_SCRIPTS.md](RUNBOOK_SCRIPTS.md). Referencia histórica y casos de éxito: [referencia/](referencia/). Otros temas (arquitectura, ingest, tareas): ver archivos en docs/ según necesidad.

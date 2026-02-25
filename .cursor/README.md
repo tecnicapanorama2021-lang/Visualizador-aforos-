@@ -4,4 +4,4 @@
 
 **Qué no se versiona:** archivos temporales y locales (`.tmp/`, cachés, preferencias personales). Esos quedan en `.gitignore`.
 
-Operación estándar del proyecto: [docs/RUNBOOK_OPERACION_ESTANDAR.md](../docs/RUNBOOK_OPERACION_ESTANDAR.md).
+Operación estándar del proyecto: [docs/RUNBOOK.md](../docs/RUNBOOK.md).
