@@ -35,7 +35,7 @@ export default defineConfig({
     host: true
   },
   optimizeDeps: {
-    include: ['esri-leaflet', 'leaflet'],
+    include: ['leaflet'],
     esbuildOptions: {
       define: {
         global: 'globalThis'
