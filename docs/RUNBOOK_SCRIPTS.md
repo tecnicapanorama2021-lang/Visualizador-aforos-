@@ -1,4 +1,6 @@
-# Runbook — Scripts npm
+# Runbook — Scripts npm (detalle por prefijo)
+
+**Doc canónico de catálogo:** [docs/SCRIPTS.md](SCRIPTS.md). Este archivo es complemento: listado detallado por prefijo.
 
 Referencia de scripts del proyecto. Ejecutar siempre desde el **repo root** (`dir package.json` / `ls package.json`).
 
@@ -25,6 +27,7 @@ Referencia de scripts del proyecto. Ejecutar siempre desde el **repo root** (`di
 |--------|-----------|
 | `npm run verify:build` | Ejecuta `npm run build`; falla si el build rompe |
 | `npm run verify:dev:api` | Arranca API en puerto 3099 unos segundos y la apaga; falla si server.js crashea |
+| `npm run verify:smoke` | Arranca API, GET /health 200, cierra (smoke HTTP) |
 | `npm run verify:worker` | Arranca el worker unos segundos y lo apaga; falla si crashea al cargar (ej. Redis) |
 
 ---

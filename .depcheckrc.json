@@ -1,0 +1,10 @@
+{
+  "ignores": [
+    "@types/leaflet",
+    "@types/react-dom",
+    "autoprefixer",
+    "postcss",
+    "tailwindcss",
+    "leaflet-draw"
+  ]
+}
