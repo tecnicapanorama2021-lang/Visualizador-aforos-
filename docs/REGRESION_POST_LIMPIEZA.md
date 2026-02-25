@@ -112,3 +112,17 @@ Se corrigieron **referencias y rutas** sin cambiar lógica de negocio:
    - Así los scripts funcionan tanto ejecutando desde la raíz como desde `scripts/python/`, sin depender del directorio de trabajo.
 
 Nada se borró ni se movió de carpeta salvo estas correcciones de referencias y paths.
+
+---
+
+## Smoke manual (flujo C) — PR-3 y posteriores
+
+Para validar que el flujo canónico sigue intacto tras cambios en scripts/catálogo:
+
+| Prueba | Comando | Criterio |
+|--------|--------|----------|
+| **Dev** | Terminal 1: `npm run dev:api`; Terminal 2: `npm run dev:web`; Terminal 3: `npm run worker` | API en 3001, web en 5173, worker sin crash (Redis arriba). |
+| **Prod** | `npm run build && npm run start` | Build OK; API arranca y responde. |
+| **bootstrap:local** | `npm run bootstrap:local` (entorno local con .env, PG y Redis) | Migraciones aplican; jobs:seed registra repeatables; si falta PG/Redis, falla con mensaje claro (exit ≠ 0). |
+
+Documentar aquí resultados si se ejecutan (ej. “Smoke C OK 2026-02” o “bootstrap:local falla por Redis no disponible, mensaje claro”).
