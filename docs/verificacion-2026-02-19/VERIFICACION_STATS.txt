@@ -1,0 +1,62 @@
+﻿
+> panorama-ingenieria@1.0.0 stats:fuentes
+> node server/scripts/stats_fuentes_aforos.js
+
+--- Estad├¡sticas por fuente de aforos ---
+
+Nodos por fuente (nodos.fuente):
+   DIM: 788
+   EXTERNO (todos): 216
+
+Estudios por origen (archivos_fuente.origen; DIM = sin archivo):
+   DIM: 4015
+   SDP: 155
+   PRIVADO: 60
+   CGT_SDM: 21
+   SECOP: 6
+   PANORAMA: 2
+   demo: 1
+
+Conteos (conteos_resumen) por origen:
+   DIM: 670427
+   SDP: 156
+   PRIVADO: 62
+   CGT_SDM: 25
+   SECOP: 9
+   PANORAMA: 5
+   demo: 4
+
+Archivos pendientes de procesar (archivos_fuente.procesado = FALSE):
+   DATOS_ABIERTOS: 257
+   SECOP: 50
+   SDP: 4
+   PRIVADO: 4
+
+Archivos por tipo (archivos_fuente.tipo):
+   CSV: 204
+   PDF: 71
+   JSON: 70
+   XLSX: 46
+
+PDF por origen (total / procesados / pendientes):
+   SECOP: 51 | procesados: 1 | pendientes: 50
+   PRIVADO: 12 | procesados: 8 | pendientes: 4
+   SDP: 8 | procesados: 4 | pendientes: 4
+
+--- Cobertura geogr├ífica de nodos ---
+Nodos con upz_id asignado:       838 / 1004
+Nodos con localidad_id asignado: 838 / 1004
+Nodos sin geom:                  161
+Top 5 UPZ con m├ís nodos: CHICO LAGO (57), LOS ALCAZARES (38), MUZU (36), EL REFUGIO (29), EL RINCON (28)
+Top 5 localidades con m├ís nodos: SUBA (94), CHAPINERO (90), ENGATIVA (85), KENNEDY (84), PUENTE ARANDA (82)
+
+--- contexto_eventos ---
+Total por tipo: OBRA 93 | EVENTO_CULTURAL 13 | CIERRE_VIA 5
+Por fuente: IDU 93 | RSS 18
+
+--- estudios_transito ---
+Total estudios: 75
+Por tipo: ETT 56 | OTRO 14 | PMT 2 | PPRU 2 | AFORO 1
+Por fuente: SECOP 51 | PRIVADO 14 | SDP 10
+Con area_influencia: 0 | Sin area_influencia: 75
+

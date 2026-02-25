@@ -1,0 +1,25 @@
+=== VERIFICACIÓN INTEGRIDAD BASE DE DATOS ===
+Fecha: 2026-02-19T21:09:20.558Z
+
+1. schema_migrations: tabla no existe (proyecto usa migraciones por archivos .sql)
+
+2. Nuevas tablas existentes:
+   - infraestructura_vial
+   - proyecciones_estudio
+   - puntos_criticos_estudio
+   - vias_estudio
+
+3. Registros en nuevas tablas:
+   vias_estudio: 0
+   puntos_criticos_estudio: 0
+   infraestructura_vial: 54
+   proyecciones_estudio: 43
+
+4. Columna estudios_transito.diagnostico_json: SÍ existe
+
+5. Integridad tablas existentes:
+   nodos: 1004
+   conteos_resumen: 670688
+   estudios_transito: 75
+   localidades: 20
+   upz: 112

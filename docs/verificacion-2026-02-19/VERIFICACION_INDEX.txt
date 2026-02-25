@@ -1,0 +1,23 @@
+=== VERIFICACIÓN index.json (data/estudios-transito/index.json) ===
+Fecha: 2026-02-19
+
+1. Formato JSON válido: SÍ (archivo se leyó y parseó correctamente)
+2. Campo "version": SÍ (valor: 1)
+3. Campo "actualizado": SÍ (valor: 2026-02-19T20:57:27.062Z)
+4. Array estudios[]: SÍ
+
+5. Número total de estudios en el array: 19
+
+6. Desglose por estado:
+   - procesado: 18
+   - error: 1
+
+7. Última fecha de actualización: 2026-02-19T20:57:27.062Z
+
+8. Campos por entrada:
+   - Todas las entradas tienen: archivo, origen, hash
+   - Las procesadas tienen: estudio_transito_id, estado, tipo_estudio, resumen, fecha_carga
+   - La entrada con error tiene: estado "error", error (mensaje)
+   - No hay entradas con estado "pending"
+
+9. Conclusión: index.json íntegro y con estructura esperada.

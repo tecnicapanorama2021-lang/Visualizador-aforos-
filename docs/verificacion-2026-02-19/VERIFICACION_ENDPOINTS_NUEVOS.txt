@@ -1,0 +1,18 @@
+=== VERIFICACIÓN ENDPOINTS NUEVOS (estudios-transito) ===
+Base URL: http://localhost:3001
+
+Endpoint: GET /api/estudios-transito/infraestructura?estudio_id=72
+Status HTTP: 404
+Número de features/registros: -
+
+Endpoint: GET /api/estudios-transito/proyecciones?estudio_id=66
+Status HTTP: 404
+Número de features/registros: -
+
+Endpoint: GET /api/estudios-transito/puntos-criticos?estudio_id=72
+Status HTTP: 404
+Número de features/registros: -
+
+Endpoint: GET /api/estudios-transito/vias?estudio_id=72
+Status HTTP: 404
+Número de features/registros: -

@@ -1,0 +1,18 @@
+=== VERIFICACIÓN CARPETAS ===
+Fecha: 2026-02-19
+
+1. Carpetas ANTIGUAS (deben estar vacías o no existir según doc):
+   - data/secop/anexos/: EXISTE, contiene 3 archivos (no vacía; migración movió PDFs pero carpeta no eliminada)
+   - data/privado/anexos/: EXISTE, contiene 19 archivos (no vacía; idem)
+
+2. Nueva estructura data/estudios-transito/PDFs/:
+   - EXISTE: SÍ
+   - SDP: 5 PDFs
+   - SECOP: 1 PDF
+   - PRIVADO: 14 PDFs
+   - OTROS: 0 PDFs
+   Total PDFs en estructura unificada: 20
+
+3. Conclusión:
+   - Estructura unificada existe y tiene PDFs.
+   - Carpetas antiguas siguen existiendo y con archivos (no se ejecutó la limpieza opcional).

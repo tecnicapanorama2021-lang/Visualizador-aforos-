@@ -1,0 +1,352 @@
+﻿;
+; Archive created at 2026-02-23 16:01:07
+;     dbname: aforos
+;     TOC Entries: 341
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.12
+;     Dumped by pg_dump version: 16.12
+;
+;
+; Selected TOC Entries:
+;
+2; 3079 16399 EXTENSION - postgis 
+6286; 0 0 COMMENT - EXTENSION postgis 
+228; 1259 17556 TABLE public archivos_fuente postgres
+6287; 0 0 COMMENT public TABLE archivos_fuente postgres
+6288; 0 0 COMMENT public COLUMN archivos_fuente.origen_id postgres
+6289; 0 0 COMMENT public COLUMN archivos_fuente.url_remota postgres
+6290; 0 0 COMMENT public COLUMN archivos_fuente.datos_extra postgres
+227; 1259 17555 SEQUENCE public archivos_fuente_id_seq postgres
+6291; 0 0 SEQUENCE OWNED BY public archivos_fuente_id_seq postgres
+226; 1259 17519 TABLE public conteos_resumen postgres
+6292; 0 0 COMMENT public TABLE conteos_resumen postgres
+6293; 0 0 COMMENT public COLUMN conteos_resumen.interval_minutes postgres
+225; 1259 17518 SEQUENCE public conteos_resumen_id_seq postgres
+6294; 0 0 SEQUENCE OWNED BY public conteos_resumen_id_seq postgres
+238; 1259 24618 TABLE public contexto_eventos postgres
+6295; 0 0 COMMENT public COLUMN contexto_eventos.ubicacion_texto postgres
+6296; 0 0 COMMENT public COLUMN contexto_eventos.zona_texto postgres
+237; 1259 24617 SEQUENCE public contexto_eventos_id_seq postgres
+6297; 0 0 SEQUENCE OWNED BY public contexto_eventos_id_seq postgres
+241; 1259 24647 TABLE public estudio_transito_nodos postgres
+224; 1259 17498 TABLE public estudios postgres
+6298; 0 0 COMMENT public TABLE estudios postgres
+6299; 0 0 COMMENT public COLUMN estudios.archivo_fuente_id postgres
+6300; 0 0 COMMENT public COLUMN estudios.has_movement_data postgres
+223; 1259 17497 SEQUENCE public estudios_id_seq postgres
+6301; 0 0 SEQUENCE OWNED BY public estudios_id_seq postgres
+240; 1259 24634 TABLE public estudios_transito postgres
+6302; 0 0 COMMENT public COLUMN estudios_transito.diagnostico_json postgres
+239; 1259 24633 SEQUENCE public estudios_transito_id_seq postgres
+6303; 0 0 SEQUENCE OWNED BY public estudios_transito_id_seq postgres
+262; 1259 25545 TABLE public eventos_canonica postgres
+6304; 0 0 COMMENT public TABLE eventos_canonica postgres
+261; 1259 25544 SEQUENCE public eventos_canonica_id_seq postgres
+6305; 0 0 SEQUENCE OWNED BY public eventos_canonica_id_seq postgres
+274; 1259 25792 TABLE public eventos_impacto postgres
+6306; 0 0 COMMENT public TABLE eventos_impacto postgres
+273; 1259 25791 SEQUENCE public eventos_impacto_id_seq postgres
+6307; 0 0 SEQUENCE OWNED BY public eventos_impacto_id_seq postgres
+256; 1259 25452 TABLE public eventos_urbanos postgres
+255; 1259 25451 SEQUENCE public eventos_urbanos_id_seq postgres
+6308; 0 0 SEQUENCE OWNED BY public eventos_urbanos_id_seq postgres
+272; 1259 25780 TABLE public festivos_colombia postgres
+6309; 0 0 COMMENT public TABLE festivos_colombia postgres
+271; 1259 25779 SEQUENCE public festivos_colombia_id_seq postgres
+6310; 0 0 SEQUENCE OWNED BY public festivos_colombia_id_seq postgres
+264; 1259 25651 TABLE public incidentes postgres
+6311; 0 0 COMMENT public TABLE incidentes postgres
+263; 1259 25650 SEQUENCE public incidentes_id_seq postgres
+6312; 0 0 SEQUENCE OWNED BY public incidentes_id_seq postgres
+266; 1259 25678 TABLE public incidentes_sources postgres
+6313; 0 0 COMMENT public TABLE incidentes_sources postgres
+265; 1259 25677 SEQUENCE public incidentes_sources_id_seq postgres
+6314; 0 0 SEQUENCE OWNED BY public incidentes_sources_id_seq postgres
+247; 1259 25292 TABLE public infraestructura_vial postgres
+6315; 0 0 COMMENT public TABLE infraestructura_vial postgres
+246; 1259 25291 SEQUENCE public infraestructura_vial_id_seq postgres
+6316; 0 0 SEQUENCE OWNED BY public infraestructura_vial_id_seq postgres
+234; 1259 24579 TABLE public localidades postgres
+233; 1259 24578 SEQUENCE public localidades_id_seq postgres
+6317; 0 0 SEQUENCE OWNED BY public localidades_id_seq postgres
+268; 1259 25738 TABLE public node_legs postgres
+6318; 0 0 COMMENT public TABLE node_legs postgres
+267; 1259 25737 SEQUENCE public node_legs_id_seq postgres
+6319; 0 0 SEQUENCE OWNED BY public node_legs_id_seq postgres
+270; 1259 25755 TABLE public node_turns postgres
+6320; 0 0 COMMENT public TABLE node_turns postgres
+6321; 0 0 COMMENT public COLUMN node_turns.timebucket postgres
+6322; 0 0 COMMENT public COLUMN node_turns.p_turn postgres
+269; 1259 25754 SEQUENCE public node_turns_id_seq postgres
+6323; 0 0 SEQUENCE OWNED BY public node_turns_id_seq postgres
+222; 1259 17481 TABLE public nodos postgres
+6324; 0 0 COMMENT public TABLE nodos postgres
+6325; 0 0 COMMENT public COLUMN nodos.tipo_nodo postgres
+6326; 0 0 COMMENT public COLUMN nodos.tipo_nodo_source postgres
+6327; 0 0 COMMENT public COLUMN nodos.tipo_nodo_rule_id postgres
+6328; 0 0 COMMENT public COLUMN nodos.tipo_nodo_confidence postgres
+251; 1259 25383 TABLE public nodos_categoria_rules postgres
+6329; 0 0 COMMENT public TABLE nodos_categoria_rules postgres
+250; 1259 25382 SEQUENCE public nodos_categoria_rules_id_seq postgres
+6330; 0 0 SEQUENCE OWNED BY public nodos_categoria_rules_id_seq postgres
+221; 1259 17480 SEQUENCE public nodos_id_seq postgres
+6331; 0 0 SEQUENCE OWNED BY public nodos_id_seq postgres
+252; 1259 25416 TABLE public nodos_layers postgres
+254; 1259 25434 TABLE public obras postgres
+260; 1259 25529 TABLE public obras_canonica postgres
+6332; 0 0 COMMENT public TABLE obras_canonica postgres
+259; 1259 25528 SEQUENCE public obras_canonica_id_seq postgres
+6333; 0 0 SEQUENCE OWNED BY public obras_canonica_id_seq postgres
+253; 1259 25433 SEQUENCE public obras_id_seq postgres
+6334; 0 0 SEQUENCE OWNED BY public obras_id_seq postgres
+249; 1259 25310 TABLE public proyecciones_estudio postgres
+6335; 0 0 COMMENT public TABLE proyecciones_estudio postgres
+248; 1259 25309 SEQUENCE public proyecciones_estudio_id_seq postgres
+6336; 0 0 SEQUENCE OWNED BY public proyecciones_estudio_id_seq postgres
+245; 1259 25264 TABLE public puntos_criticos_estudio postgres
+6337; 0 0 COMMENT public TABLE puntos_criticos_estudio postgres
+244; 1259 25263 SEQUENCE public puntos_criticos_estudio_id_seq postgres
+6338; 0 0 SEQUENCE OWNED BY public puntos_criticos_estudio_id_seq postgres
+258; 1259 25470 TABLE public semaforos postgres
+257; 1259 25469 SEQUENCE public semaforos_id_seq postgres
+6339; 0 0 SEQUENCE OWNED BY public semaforos_id_seq postgres
+230; 1259 17577 TABLE public sensores_bici postgres
+6340; 0 0 COMMENT public TABLE sensores_bici postgres
+229; 1259 17576 SEQUENCE public sensores_bici_id_seq postgres
+6341; 0 0 SEQUENCE OWNED BY public sensores_bici_id_seq postgres
+236; 1259 24591 TABLE public upz postgres
+235; 1259 24590 SEQUENCE public upz_id_seq postgres
+6342; 0 0 SEQUENCE OWNED BY public upz_id_seq postgres
+232; 1259 17592 TABLE public velocidades postgres
+6343; 0 0 COMMENT public TABLE velocidades postgres
+231; 1259 17591 SEQUENCE public velocidades_id_seq postgres
+6344; 0 0 SEQUENCE OWNED BY public velocidades_id_seq postgres
+243; 1259 25246 TABLE public vias_estudio postgres
+6345; 0 0 COMMENT public TABLE vias_estudio postgres
+242; 1259 25245 SEQUENCE public vias_estudio_id_seq postgres
+6346; 0 0 SEQUENCE OWNED BY public vias_estudio_id_seq postgres
+5812; 2604 17559 DEFAULT public archivos_fuente id postgres
+5803; 2604 17522 DEFAULT public conteos_resumen id postgres
+5827; 2604 24621 DEFAULT public contexto_eventos id postgres
+5799; 2604 17501 DEFAULT public estudios id postgres
+5832; 2604 24637 DEFAULT public estudios_transito id postgres
+5866; 2604 25548 DEFAULT public eventos_canonica id postgres
+5886; 2604 25795 DEFAULT public eventos_impacto id postgres
+5857; 2604 25455 DEFAULT public eventos_urbanos id postgres
+5885; 2604 25783 DEFAULT public festivos_colombia id postgres
+5869; 2604 25654 DEFAULT public incidentes id postgres
+5878; 2604 25681 DEFAULT public incidentes_sources id postgres
+5840; 2604 25295 DEFAULT public infraestructura_vial id postgres
+5825; 2604 24582 DEFAULT public localidades id postgres
+5882; 2604 25741 DEFAULT public node_legs id postgres
+5883; 2604 25758 DEFAULT public node_turns id postgres
+5793; 2604 17484 DEFAULT public nodos id postgres
+5844; 2604 25386 DEFAULT public nodos_categoria_rules id postgres
+5854; 2604 25437 DEFAULT public obras id postgres
+5863; 2604 25532 DEFAULT public obras_canonica id postgres
+5842; 2604 25313 DEFAULT public proyecciones_estudio id postgres
+5838; 2604 25267 DEFAULT public puntos_criticos_estudio id postgres
+5860; 2604 25473 DEFAULT public semaforos id postgres
+5817; 2604 17580 DEFAULT public sensores_bici id postgres
+5826; 2604 24594 DEFAULT public upz id postgres
+5821; 2604 17595 DEFAULT public velocidades id postgres
+5835; 2604 25249 DEFAULT public vias_estudio id postgres
+6233; 0 17556 TABLE DATA public archivos_fuente postgres
+6231; 0 17519 TABLE DATA public conteos_resumen postgres
+6243; 0 24618 TABLE DATA public contexto_eventos postgres
+6246; 0 24647 TABLE DATA public estudio_transito_nodos postgres
+6229; 0 17498 TABLE DATA public estudios postgres
+6245; 0 24634 TABLE DATA public estudios_transito postgres
+6267; 0 25545 TABLE DATA public eventos_canonica postgres
+6279; 0 25792 TABLE DATA public eventos_impacto postgres
+6261; 0 25452 TABLE DATA public eventos_urbanos postgres
+6277; 0 25780 TABLE DATA public festivos_colombia postgres
+6269; 0 25651 TABLE DATA public incidentes postgres
+6271; 0 25678 TABLE DATA public incidentes_sources postgres
+6252; 0 25292 TABLE DATA public infraestructura_vial postgres
+6239; 0 24579 TABLE DATA public localidades postgres
+6273; 0 25738 TABLE DATA public node_legs postgres
+6275; 0 25755 TABLE DATA public node_turns postgres
+6227; 0 17481 TABLE DATA public nodos postgres
+6256; 0 25383 TABLE DATA public nodos_categoria_rules postgres
+6257; 0 25416 TABLE DATA public nodos_layers postgres
+6259; 0 25434 TABLE DATA public obras postgres
+6265; 0 25529 TABLE DATA public obras_canonica postgres
+6254; 0 25310 TABLE DATA public proyecciones_estudio postgres
+6250; 0 25264 TABLE DATA public puntos_criticos_estudio postgres
+6263; 0 25470 TABLE DATA public semaforos postgres
+6235; 0 17577 TABLE DATA public sensores_bici postgres
+5792; 0 16718 TABLE DATA public spatial_ref_sys postgres
+6241; 0 24591 TABLE DATA public upz postgres
+6237; 0 17592 TABLE DATA public velocidades postgres
+6248; 0 25246 TABLE DATA public vias_estudio postgres
+6347; 0 0 SEQUENCE SET public archivos_fuente_id_seq postgres
+6348; 0 0 SEQUENCE SET public conteos_resumen_id_seq postgres
+6349; 0 0 SEQUENCE SET public contexto_eventos_id_seq postgres
+6350; 0 0 SEQUENCE SET public estudios_id_seq postgres
+6351; 0 0 SEQUENCE SET public estudios_transito_id_seq postgres
+6352; 0 0 SEQUENCE SET public eventos_canonica_id_seq postgres
+6353; 0 0 SEQUENCE SET public eventos_impacto_id_seq postgres
+6354; 0 0 SEQUENCE SET public eventos_urbanos_id_seq postgres
+6355; 0 0 SEQUENCE SET public festivos_colombia_id_seq postgres
+6356; 0 0 SEQUENCE SET public incidentes_id_seq postgres
+6357; 0 0 SEQUENCE SET public incidentes_sources_id_seq postgres
+6358; 0 0 SEQUENCE SET public infraestructura_vial_id_seq postgres
+6359; 0 0 SEQUENCE SET public localidades_id_seq postgres
+6360; 0 0 SEQUENCE SET public node_legs_id_seq postgres
+6361; 0 0 SEQUENCE SET public node_turns_id_seq postgres
+6362; 0 0 SEQUENCE SET public nodos_categoria_rules_id_seq postgres
+6363; 0 0 SEQUENCE SET public nodos_id_seq postgres
+6364; 0 0 SEQUENCE SET public obras_canonica_id_seq postgres
+6365; 0 0 SEQUENCE SET public obras_id_seq postgres
+6366; 0 0 SEQUENCE SET public proyecciones_estudio_id_seq postgres
+6367; 0 0 SEQUENCE SET public puntos_criticos_estudio_id_seq postgres
+6368; 0 0 SEQUENCE SET public semaforos_id_seq postgres
+6369; 0 0 SEQUENCE SET public sensores_bici_id_seq postgres
+6370; 0 0 SEQUENCE SET public upz_id_seq postgres
+6371; 0 0 SEQUENCE SET public velocidades_id_seq postgres
+6372; 0 0 SEQUENCE SET public vias_estudio_id_seq postgres
+5917; 2606 17567 CONSTRAINT public archivos_fuente archivos_fuente_pkey postgres
+5912; 2606 17534 CONSTRAINT public conteos_resumen conteos_resumen_pkey postgres
+5945; 2606 24628 CONSTRAINT public contexto_eventos contexto_eventos_pkey postgres
+5958; 2606 24651 CONSTRAINT public estudio_transito_nodos estudio_transito_nodos_pkey postgres
+5905; 2606 17508 CONSTRAINT public estudios estudios_pkey postgres
+5953; 2606 24643 CONSTRAINT public estudios_transito estudios_transito_pkey postgres
+6008; 2606 25554 CONSTRAINT public eventos_canonica eventos_canonica_pkey postgres
+6046; 2606 25804 CONSTRAINT public eventos_impacto eventos_impacto_incidente_id_key postgres
+6048; 2606 25802 CONSTRAINT public eventos_impacto eventos_impacto_pkey postgres
+5992; 2606 25461 CONSTRAINT public eventos_urbanos eventos_urbanos_pkey postgres
+6041; 2606 25789 CONSTRAINT public festivos_colombia festivos_colombia_fecha_key postgres
+6043; 2606 25787 CONSTRAINT public festivos_colombia festivos_colombia_pkey postgres
+6021; 2606 25669 CONSTRAINT public incidentes incidentes_pkey postgres
+6027; 2606 25690 CONSTRAINT public incidentes_sources incidentes_sources_incidente_id_fuente_source_id_key postgres
+6029; 2606 25688 CONSTRAINT public incidentes_sources incidentes_sources_pkey postgres
+5972; 2606 25300 CONSTRAINT public infraestructura_vial infraestructura_vial_pkey postgres
+5936; 2606 24588 CONSTRAINT public localidades localidades_codigo_key postgres
+5938; 2606 24586 CONSTRAINT public localidades localidades_pkey postgres
+6032; 2606 25747 CONSTRAINT public node_legs node_legs_node_id_leg_code_key postgres
+6034; 2606 25745 CONSTRAINT public node_legs node_legs_pkey postgres
+6037; 2606 25765 CONSTRAINT public node_turns node_turns_node_id_from_leg_code_to_leg_code_timebucket_key postgres
+6039; 2606 25763 CONSTRAINT public node_turns node_turns_pkey postgres
+5981; 2606 25396 CONSTRAINT public nodos_categoria_rules nodos_categoria_rules_pkey postgres
+5986; 2606 25425 CONSTRAINT public nodos_layers nodos_layers_pkey postgres
+5900; 2606 17491 CONSTRAINT public nodos nodos_pkey postgres
+6004; 2606 25538 CONSTRAINT public obras_canonica obras_canonica_pkey postgres
+5990; 2606 25443 CONSTRAINT public obras obras_pkey postgres
+5976; 2606 25318 CONSTRAINT public proyecciones_estudio proyecciones_estudio_pkey postgres
+5967; 2606 25272 CONSTRAINT public puntos_criticos_estudio puntos_criticos_estudio_pkey postgres
+5999; 2606 25479 CONSTRAINT public semaforos semaforos_pkey postgres
+5924; 2606 17587 CONSTRAINT public sensores_bici sensores_bici_pkey postgres
+5941; 2606 24600 CONSTRAINT public upz upz_codigo_key postgres
+5943; 2606 24598 CONSTRAINT public upz upz_pkey postgres
+5915; 2606 25775 CONSTRAINT public conteos_resumen uq_conteos_estudio_sentido_ini_fin postgres
+5910; 2606 17510 CONSTRAINT public estudios uq_estudios_nodo_file postgres
+6013; 2606 25556 CONSTRAINT public eventos_canonica uq_eventos_canonica_source postgres
+5903; 2606 17493 CONSTRAINT public nodos uq_nodos_node_id_externo postgres
+6006; 2606 25540 CONSTRAINT public obras_canonica uq_obras_canonica_source postgres
+5926; 2606 17589 CONSTRAINT public sensores_bici uq_sensores_bici_id_externo postgres
+5931; 2606 17604 CONSTRAINT public velocidades uq_velocidades_tramo_fecha postgres
+5933; 2606 17602 CONSTRAINT public velocidades velocidades_pkey postgres
+5962; 2606 25255 CONSTRAINT public vias_estudio vias_estudio_pkey postgres
+5918; 1259 17569 INDEX public idx_archivos_fuente_hash postgres
+5919; 1259 17608 INDEX public idx_archivos_fuente_origen_id postgres
+5920; 1259 17568 INDEX public idx_archivos_fuente_procesado postgres
+5921; 1259 17609 INDEX public idx_archivos_fuente_url_remota postgres
+5913; 1259 17542 INDEX public idx_conteos_estudio_intervalo postgres
+5946; 1259 25227 INDEX public idx_contexto_eventos_localidad postgres
+5947; 1259 25228 INDEX public idx_contexto_eventos_upz postgres
+5948; 1259 24630 INDEX public idx_ctx_fecha postgres
+5949; 1259 24629 INDEX public idx_ctx_geom postgres
+5950; 1259 24632 INDEX public idx_ctx_origen_unico postgres
+5951; 1259 24631 INDEX public idx_ctx_tipo postgres
+5906; 1259 17575 INDEX public idx_estudios_archivo_fuente postgres
+5907; 1259 17517 INDEX public idx_estudios_file_id_dim postgres
+5908; 1259 17516 INDEX public idx_estudios_nodo_fecha postgres
+5954; 1259 24644 INDEX public idx_et_geom postgres
+5955; 1259 24645 INDEX public idx_et_tipo postgres
+5956; 1259 24646 INDEX public idx_et_url_unica postgres
+6009; 1259 25559 INDEX public idx_eventos_canonica_fechas postgres
+6010; 1259 25557 INDEX public idx_eventos_canonica_geom postgres
+6011; 1259 25558 INDEX public idx_eventos_canonica_tipo postgres
+6049; 1259 25810 INDEX public idx_eventos_impacto_incidente postgres
+5993; 1259 25467 INDEX public idx_eventos_urbanos_nodo_id postgres
+5994; 1259 25468 INDEX public idx_eventos_urbanos_tipo postgres
+6044; 1259 25790 INDEX public idx_festivos_fecha postgres
+6014; 1259 25675 INDEX public idx_incidentes_end_at postgres
+6015; 1259 25672 INDEX public idx_incidentes_estado postgres
+6016; 1259 25673 INDEX public idx_incidentes_fuente postgres
+6017; 1259 25676 INDEX public idx_incidentes_geom postgres
+6023; 1259 25697 INDEX public idx_incidentes_sources_fuente postgres
+6024; 1259 25696 INDEX public idx_incidentes_sources_incidente postgres
+6025; 1259 25698 INDEX public idx_incidentes_sources_source_id postgres
+6018; 1259 25674 INDEX public idx_incidentes_start_at postgres
+6019; 1259 25671 INDEX public idx_incidentes_tipo postgres
+5968; 1259 25306 INDEX public idx_infraestructura_et postgres
+5969; 1259 25307 INDEX public idx_infraestructura_geom postgres
+5970; 1259 25308 INDEX public idx_infraestructura_tipo postgres
+5934; 1259 25735 INDEX public idx_localidades_geom postgres
+6030; 1259 25753 INDEX public idx_node_legs_node_id postgres
+6035; 1259 25771 INDEX public idx_node_turns_node_bucket postgres
+5896; 1259 17496 INDEX public idx_nodos_fuente postgres
+5897; 1259 17495 INDEX public idx_nodos_geom postgres
+5983; 1259 25431 INDEX public idx_nodos_layers_layer_key postgres
+5984; 1259 25432 INDEX public idx_nodos_layers_nodo_id postgres
+5898; 1259 25378 INDEX public idx_nodos_tipo_nodo postgres
+6000; 1259 25542 INDEX public idx_obras_canonica_estado postgres
+6001; 1259 25543 INDEX public idx_obras_canonica_fechas postgres
+6002; 1259 25541 INDEX public idx_obras_canonica_geom postgres
+5987; 1259 25450 INDEX public idx_obras_estado postgres
+5988; 1259 25449 INDEX public idx_obras_nodo_id postgres
+5973; 1259 25335 INDEX public idx_proyecciones_escenario postgres
+5974; 1259 25334 INDEX public idx_proyecciones_et postgres
+5963; 1259 25288 INDEX public idx_puntos_criticos_et postgres
+5964; 1259 25289 INDEX public idx_puntos_criticos_geom postgres
+5965; 1259 25290 INDEX public idx_puntos_criticos_tipo postgres
+5977; 1259 25397 INDEX public idx_rules_enabled_priority postgres
+5978; 1259 25399 INDEX public idx_rules_field postgres
+5979; 1259 25398 INDEX public idx_rules_tipo postgres
+5995; 1259 25485 INDEX public idx_semaforos_nodo_id postgres
+5996; 1259 25486 INDEX public idx_semaforos_origen postgres
+5997; 1259 25560 INDEX public idx_semaforos_source postgres
+5922; 1259 17590 INDEX public idx_sensores_bici_geom postgres
+5939; 1259 25736 INDEX public idx_upz_geom postgres
+5927; 1259 17606 INDEX public idx_velocidades_fecha postgres
+5928; 1259 17607 INDEX public idx_velocidades_geom postgres
+5929; 1259 17605 INDEX public idx_velocidades_tramo postgres
+5959; 1259 25261 INDEX public idx_vias_estudio_et postgres
+5960; 1259 25262 INDEX public idx_vias_estudio_geom postgres
+6022; 1259 25670 INDEX public uq_incidentes_fuente_sourceid postgres
+5901; 1259 17494 INDEX public uq_nodos_internal_id_dim postgres
+5982; 1259 25400 INDEX public uq_rules_match postgres
+6056; 2606 24662 FK CONSTRAINT public archivos_fuente archivos_fuente_estudio_transito_id_fkey postgres
+6055; 2606 17537 FK CONSTRAINT public conteos_resumen conteos_resumen_estudio_id_fkey postgres
+6058; 2606 25217 FK CONSTRAINT public contexto_eventos contexto_eventos_localidad_id_fkey postgres
+6059; 2606 25222 FK CONSTRAINT public contexto_eventos contexto_eventos_upz_id_fkey postgres
+6060; 2606 24652 FK CONSTRAINT public estudio_transito_nodos estudio_transito_nodos_estudio_transito_id_fkey postgres
+6061; 2606 24657 FK CONSTRAINT public estudio_transito_nodos estudio_transito_nodos_nodo_id_fkey postgres
+6053; 2606 17570 FK CONSTRAINT public estudios estudios_archivo_fuente_id_fkey postgres
+6054; 2606 17511 FK CONSTRAINT public estudios estudios_nodo_id_fkey postgres
+6077; 2606 25805 FK CONSTRAINT public eventos_impacto eventos_impacto_incidente_id_fkey postgres
+6072; 2606 25462 FK CONSTRAINT public eventos_urbanos eventos_urbanos_nodo_id_fkey postgres
+6050; 2606 25402 FK CONSTRAINT public nodos fk_nodos_tipo_nodo_rule postgres
+6074; 2606 25691 FK CONSTRAINT public incidentes_sources incidentes_sources_incidente_id_fkey postgres
+6066; 2606 25301 FK CONSTRAINT public infraestructura_vial infraestructura_vial_estudio_transito_id_fkey postgres
+6075; 2606 25748 FK CONSTRAINT public node_legs node_legs_node_id_fkey postgres
+6076; 2606 25766 FK CONSTRAINT public node_turns node_turns_node_id_fkey postgres
+6070; 2606 25426 FK CONSTRAINT public nodos_layers nodos_layers_nodo_id_fkey postgres
+6051; 2606 24607 FK CONSTRAINT public nodos nodos_localidad_id_fkey postgres
+6052; 2606 24612 FK CONSTRAINT public nodos nodos_upz_id_fkey postgres
+6071; 2606 25444 FK CONSTRAINT public obras obras_nodo_id_fkey postgres
+6067; 2606 25319 FK CONSTRAINT public proyecciones_estudio proyecciones_estudio_estudio_transito_id_fkey postgres
+6068; 2606 25324 FK CONSTRAINT public proyecciones_estudio proyecciones_estudio_nodo_id_fkey postgres
+6069; 2606 25329 FK CONSTRAINT public proyecciones_estudio proyecciones_estudio_via_id_fkey postgres
+6063; 2606 25273 FK CONSTRAINT public puntos_criticos_estudio puntos_criticos_estudio_estudio_transito_id_fkey postgres
+6064; 2606 25278 FK CONSTRAINT public puntos_criticos_estudio puntos_criticos_estudio_localidad_id_fkey postgres
+6065; 2606 25283 FK CONSTRAINT public puntos_criticos_estudio puntos_criticos_estudio_upz_id_fkey postgres
+6073; 2606 25480 FK CONSTRAINT public semaforos semaforos_nodo_id_fkey postgres
+6057; 2606 24601 FK CONSTRAINT public upz upz_localidad_id_fkey postgres
+6062; 2606 25256 FK CONSTRAINT public vias_estudio vias_estudio_estudio_transito_id_fkey postgres

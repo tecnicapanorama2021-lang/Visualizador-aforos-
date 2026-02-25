@@ -1,0 +1,28 @@
+# OPCIONAL / EJEMPLO: Postgres + PostGIS en Docker (no requerido para producción)
+# El proyecto está pensado para correr con PostgreSQL instalado en el servidor (sin Docker).
+#
+# Si quieres usar Docker solo para desarrollo local:
+#   cd deprecated && docker-compose up -d db
+#   export PGHOST=localhost PGPORT=5432 PGDATABASE=aforos PGUSER=postgres PGPASSWORD=postgres
+#   npm run db:migrate && npm run db:full-load
+
+services:
+  db:
+    image: postgis/postgis:15-3.4
+    container_name: aforos-db
+    environment:
+      POSTGRES_DB: aforos
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - aforos_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d aforos"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  aforos_pgdata:

@@ -1,0 +1,60 @@
+# Dependencies
+node_modules
+
+# Build / output
+dist
+dist-ssr
+.cache
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ETL temporal (CGT raw + estándar)
+server/scripts/tmp
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Project data policy ---
+# Local/regenerable working data (downloads, extracts, annexes, progress logs)
+data/
+
+# Server versioned dictionaries/config must remain tracked
+!server/data/
+
+# public/data: keep only canonical files tracked; ignore everything else generated/untracked
+public/data/*
+!public/data/studies_dictionary.json
+!public/data/nodos_unificados.json
+!public/data/volumennodo_dim.json
+!public/data/calendario_obras_eventos.json
+!public/data/agenda_eventos.json
+!public/data/README.md
+!public/data/README_DATOS_UNIFICADOS.md
+
+# Always ignore known generated artifacts (extra safety)
+public/data/*snapshot*.json
+public/data/*raw*.json
+public/data/*historial*.json
+public/data/ia_historial*.json
+public/data/velocidades_por_nodo.json

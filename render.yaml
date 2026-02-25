@@ -1,0 +1,11 @@
+# Render.com - Despliegue con un clic
+# https://dashboard.render.com -> New -> Web Service -> Conectar este repo
+services:
+  - type: web
+    name: panorama-ingenieria
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production

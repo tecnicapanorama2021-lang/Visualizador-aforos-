@@ -1,0 +1,6 @@
+# Dependencias para pdf_extract_tablas.py (al menos una)
+# Instalar: pip install -r server/scripts/requirements-pdf.txt
+# Opción 1 (más ligera): pdfplumber
+pdfplumber>=0.11.0
+# Opción 2 (mejor para tablas con bordes): camelot
+# camelot-py[cv]==0.11.0

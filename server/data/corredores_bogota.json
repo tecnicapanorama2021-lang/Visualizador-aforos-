@@ -1,0 +1,22 @@
+[
+  { "id": "autonorte", "pattern": "autonorte|autopista norte|autop norte", "lng": -74.03, "lat": 4.75, "buffer_m": 400 },
+  { "id": "boyaca", "pattern": "av\\.? boyaca|avenida boyaca|boyacá", "lng": -74.11, "lat": 4.65, "buffer_m": 350 },
+  { "id": "calle26", "pattern": "calle 26|calle 26\\s|k26", "lng": -74.09, "lat": 4.63, "buffer_m": 400 },
+  { "id": "caracas", "pattern": "av\\.? caracas|avenida caracas|caracas\\s|av caracas", "lng": -74.07, "lat": 4.64, "buffer_m": 300 },
+  { "id": "septima", "pattern": "septima|séptima|7ma|7\\.?a", "lng": -74.06, "lat": 4.64, "buffer_m": 250 },
+  { "id": "nqs", "pattern": "nqs|n\\.?q\\.?s|norte quito sur", "lng": -74.08, "lat": 4.62, "buffer_m": 350 },
+  { "id": "americana", "pattern": "americana|americas|américas", "lng": -74.12, "lat": 4.62, "buffer_m": 400 },
+  { "id": "suba", "pattern": "portal suba|suba\\s|av suba|avenida suba", "lng": -74.08, "lat": 4.75, "buffer_m": 400 },
+  { "id": "carrera30", "pattern": "carrera 30|cr 30|cra 30", "lng": -74.08, "lat": 4.60, "buffer_m": 300 },
+  { "id": "centro", "pattern": "centro de bogota|centro bogota|la candelaria|candelaria", "lng": -74.07, "lat": 4.60, "buffer_m": 500 },
+  { "id": "simon_bolivar", "pattern": "simon bolivar|simón bolívar|parque simon bolivar", "lng": -74.09, "lat": 4.66, "buffer_m": 600 },
+  { "id": "campin", "pattern": "campin|campín|estadio campin|el campin", "lng": -74.08, "lat": 4.64, "buffer_m": 400 },
+  { "id": "movistar", "pattern": "movistar arena|arena bogota", "lng": -74.09, "lat": 4.65, "buffer_m": 300 },
+  { "id": "corferias", "pattern": "corferias|corferias bogota", "lng": -74.10, "lat": 4.62, "buffer_m": 400 },
+  { "id": "tunal", "pattern": "tunal|parque tunal|el tunal", "lng": -74.14, "lat": 4.58, "buffer_m": 400 },
+  { "id": "usaquen", "pattern": "usaquen|usaquén|zona t usaquen", "lng": -74.03, "lat": 4.69, "buffer_m": 500 },
+  { "id": "chapinero", "pattern": "chapinero|chapinero central", "lng": -74.06, "lat": 4.64, "buffer_m": 500 },
+  { "id": "kennedy", "pattern": "kennedy|localidad kennedy", "lng": -74.15, "lat": 4.62, "buffer_m": 600 },
+  { "id": "bosa", "pattern": "bosa|localidad bosa", "lng": -74.19, "lat": 4.61, "buffer_m": 500 },
+  { "id": "ciudad_bolivar", "pattern": "ciudad bolivar|ciudad bolívar", "lng": -74.17, "lat": 4.58, "buffer_m": 500 }
+]

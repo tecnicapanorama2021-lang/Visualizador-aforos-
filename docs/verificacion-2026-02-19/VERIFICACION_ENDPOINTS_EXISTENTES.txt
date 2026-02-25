@@ -1,0 +1,26 @@
+=== VERIFICACIÓN ENDPOINTS EXISTENTES (sin cambios) ===
+Base URL: http://localhost:3001
+
+GET /api/aforos/historial/171 → Status 200 OK
+
+GET /api/aforos/nodos?fuente=DIM → Status 200 OK
+   (features: 788)
+
+GET /api/aforos/geocode/171 → Status 200 OK
+
+GET /api/datos-unificados/contexto-eventos → Status 200 OK
+
+GET /api/datos-unificados/obras → Status 200 OK
+
+GET /api/datos-unificados/eventos → Status 404 FALLO
+   Error: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/datos-unificados/eventos</pre>
+</body>
+</html>
+

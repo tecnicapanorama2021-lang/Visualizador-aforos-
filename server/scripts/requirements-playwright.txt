@@ -1,0 +1,3 @@
+# Playwright se instala con npm; este archivo es opcional para documentación.
+# npm install playwright playwright-extra puppeteer-extra-plugin-stealth
+# npx playwright install chromium
