@@ -4,6 +4,14 @@ Referencia por script: propósito, dependencias (Redis/PG), si genera archivos y
 
 ---
 
+## Oficial vs legacy/deprecated
+
+**Oficial (flujo C):** `dev`, `dev:api`, `dev:web`, `worker`, `build`, `start`, `verify:all`, `bootstrap:local`, `db:migrate`, `jobs:seed`. Son los que usa el runbook para desarrollo y producción.
+
+**Legacy / deprecated:** scripts que se mantienen por compatibilidad o uso puntual pero no forman parte del flujo oficial. No usar en producción sin revisar; muchos son one-offs, duplicados o variantes con Tor/proxy. Ejemplos: variantes `*:tor`, `*:tor-service`, `secop:catalogo:anexos` (Playwright proxy), pipelines completos (`pipeline:full`, `pipeline:full:tor`), verificaciones específicas (`verify:agendate:eventos`, `verify:eventos:bogota`, `diag:agendate:join`). Ver `docs/RUNBOOK_SCRIPTS.md` por prefijo. No se han renombrado a `legacy:*` para no romper automatizaciones existentes.
+
+---
+
 ## Resumen (tabla)
 
 | Script | Propósito | Requiere Redis | Requiere PG | Genera archivos | Side-effects |
@@ -20,7 +28,7 @@ Referencia por script: propósito, dependencias (Redis/PG), si genera archivos y
 | **verify:dev:api** | Smoke API (3099, unos segundos) | No | Opcional | No | Puertos |
 | **verify:worker** | Smoke worker (arranca y apaga) | Sí | No | No | Redis (lectura) |
 | **verify:all** | verify:build + verify:dev:api + verify:worker | Sí (worker) | Opcional | No | No |
-| **bootstrap:local** | Migraciones + jobs:seed (local) | Sí | Sí | No | BD, Redis |
+| **bootstrap:local** | Migraciones + jobs:seed (local); pide "YES" o usar `-- --yes` | Sí | Sí | No | BD, Redis |
 | **db:full-load** | Setup y carga completa desde JSON | No | Sí | No | BD |
 | **historial:build** | Historial masivo por nodo | No | No | public/data/ia_historial.json | Sí |
 | **datos-unificados:obras** | Calendario obras (IDU/CKAN) | No | No | public/data/calendario_obras_eventos.json | Sí |
